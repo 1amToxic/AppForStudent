@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F2F2"
+    tools:context=".Fragment.SpendFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/layoutTopSpend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/textMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Tháng"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/textMonth"
+            android:layout_alignStart="@id/textMonth"
+            android:layout_alignLeft="@id/textMonth"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignStart="@id/editSum"
+            android:layout_alignLeft="@id/editSum"
+            android:layout_toRightOf="@id/textMonth"
+            android:text="Dự kiến "
+            android:textSize="20dp" />
+
+        <EditText
+            android:textStyle="bold"
+            android:id="@+id/editSum"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/textMonth"
+            android:layout_toRightOf="@id/spinner"
+            android:hint="MoneySum"
+            android:textColor="#DD8A15"
+            android:textSize="20dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignStart="@id/summary"
+            android:layout_alignLeft="@id/summary"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Tổng"
+            android:textSize="20dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/summary"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/textMonth"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:textColor="@color/red"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/layoutTopSpend"
+        android:background="@color/colorAccent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSpend"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_above="@id/addSpendFab"
+        android:layout_below="@id/layoutTopSpend"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerSpend"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addSpendFab"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="13dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/plusl" />
+
+    <RelativeLayout
+        android:id="@+id/addSpendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:background="#BD94A2"
+        android:visibility="invisible">
+
+        <EditText
+            android:id="@+id/editSpend"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Mục đích"
+            android:textColor="#FFF" />
+
+        <EditText
+            android:id="@+id/editMoney"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/editSpend"
+            android:hint="Nhập số tiền"
+            android:textColor="#FFF" />
+
+        <ImageView
+            android:id="@+id/imageAdd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/editMoney"
+            android:src="@drawable/money" />
+    </RelativeLayout>
+</RelativeLayout>

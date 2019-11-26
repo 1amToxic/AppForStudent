@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgrmain"
+        android:orientation="vertical"
+        tools:context=".MainActivity" />
+
+    <RelativeLayout
+        android:id="@+id/container_vieww"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" />
+    <!--Left menu-->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:background="#40ADDF"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/navi_header_height">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/yourphoto"
+                    android:layout_width="@dimen/yourphoto"
+                    android:layout_height="@dimen/yourphoto"
+                    android:src="@drawable/boss" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/yourphoto"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@+id/yourphoto"
+                    android:text="Student"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sizeTextHeader" />
+
+                <TextView
+                    android:id="@+id/textDate"
+                    android:layout_width="@dimen/navi_header_height"
+                    android:layout_height="@dimen/yourphoto"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#111010" />
+
+            <RelativeLayout
+                android:background="#FFF"
+                android:id="@+id/subjectItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/navi_row"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/notesubject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/yourphoto"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_noted_subject"
+                    android:padding="10dp"
+                    android:text="   Ghi chú bài học"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/calendarItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/navi_row"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_calendar"
+                    android:padding="10dp"
+                    android:text="   Ghi chú công việc"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/moneyItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/navi_row"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/tvMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/yourphoto"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/money"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+                    android:padding="10dp"
+                    android:text="   Chi tiêu"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/loveItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/navi_row"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/tvHeart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/yourphoto"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/money"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/heartt"
+                    android:padding="10dp"
+                    android:text="   Tình yêu"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

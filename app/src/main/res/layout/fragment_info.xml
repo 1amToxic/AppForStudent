@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.InfoFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/size"
+        android:layout_marginTop="50dp"
+        android:text="Ứng dụng giúp cho sinh viên, cũng như học sinh có thể quản lí tốt
+hơn thời gian cũng như tiền bạc của mình !!!"
+        android:textStyle="bold"
+        android:textColor="#03A9F4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="500dp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Version 1.1.5" />
+
+</LinearLayout>

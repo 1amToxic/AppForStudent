@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.NoteKnowlegde"
+    android:background="#A8C9F5">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:id="@+id/recyclerNote"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_above="@+id/fabNote"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNote"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/plusl" />
+    <RelativeLayout
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layoutNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textColor="#044983"
+            android:id="@+id/editTitle"
+            android:hint="Title"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColor="#AC09C9"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/editTitle"
+            android:id="@+id/editContent"
+            android:hint="Content"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/addNote"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/editContent"
+            android:src="@drawable/ic_file_upload"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+</RelativeLayout>

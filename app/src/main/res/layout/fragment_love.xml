@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D54A77"
+    tools:context=".Fragment.LoveFragment">
+    <!--<Button-->
+    <!--android:id="@+id/btn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <RelativeLayout
+        android:id="@+id/layoutFa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Bố mẹ ở nhà còng lưng nuôi đi học,yêu với đương cái gì, yêu với đương cái gì!!"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/fa" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/questions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textQe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Bạn đang độc thân hay
+             đã có người thương?"
+            android:textColor="#FFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btnFa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textQe"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/custom_recy"
+            android:text="FA" />
+
+        <Button
+            android:id="@+id/btnIl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textQe"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/custom_recy"
+            android:text="Đã có gấu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutYes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/layoutLove"
+            android:background="@drawable/lovememo">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="cursive"
+                android:text="~Been Love Forever~"
+                android:textColor="#FFF"
+                android:textSize="30sp"
+                android:textStyle="italic|bold" />
+
+
+
+            <com.gelitenight.waveview.library.WaveView
+                android:id="@+id/wave"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"/>
+            <TextView
+                android:id="@+id/date"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:fontFamily="cursive"
+                android:textColor="#FFF"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layoutLove"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFF">
+
+
+            <ImageView
+                android:id="@+id/girlIma"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shape"
+                android:src="@drawable/girl" />
+
+            <ImageView
+                android:id="@+id/boyIma"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape"
+                android:src="@drawable/boy" />
+
+            <EditText
+                android:textSize="23dp"
+                android:id="@+id/nameBoy"
+                android:hint="Ten ban nam"
+                android:textColor="#B10DCE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/boyIma"
+                android:layout_alignStart="@id/boyIma"
+                android:layout_alignLeft="@id/boyIma" />
+
+            <EditText
+                android:textSize="23dp"
+                android:id="@+id/nameGirl"
+                android:hint="Ten ban nu"
+                android:textColor="#B10DCE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/girlIma"
+                android:layout_alignStart="@+id/girlIma"
+                android:layout_alignLeft="@+id/girlIma" />
+            <!--<TextView-->
+                <!--android:id="@+id/instruct"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_below="@id/pickdate"-->
+                <!--android:textSize="20dp"-->
+                <!--android:text="An vao trai tym de\nthem ngay hen ho"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <ImageView
+                android:id="@+id/pickdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/hearticon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

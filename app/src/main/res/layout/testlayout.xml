@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@drawable/backgroundheader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navi_header_height">
+        <ImageView
+            android:id="@+id/yourphoto"
+            android:src="@drawable/boss"
+            android:layout_width="@dimen/yourphoto"
+            android:layout_height="@dimen/yourphoto" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/sizeTextHeader"
+            android:text="Nguyen Tung Lam"
+            android:layout_toRightOf="@+id/yourphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/yourphoto" />
+        <TextView
+            android:textSize="30dp"
+            android:text="aaaa"
+            android:textColor="@color/white"
+            android:id="@+id/textDate"
+            android:layout_below="@+id/yourphoto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/yourphoto" />
+    </RelativeLayout>
+    <View
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navi_row">
+        <ImageView
+            android:id="@+id/amark"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/yourphoto"
+            android:layout_height="@dimen/yourphoto" />
+        <TextView
+            android:layout_marginLeft="@dimen/yourphoto"
+            android:textSize="@dimen/sizeTextHeader"
+            android:text="@string/tinhdiem"
+            android:layout_toRightOf="@id/amark"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/yourphoto" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navi_row">
+        <ImageView
+            android:id="@+id/notesubject"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_noted_subject"
+            android:layout_width="@dimen/yourphoto"
+            android:layout_height="@dimen/yourphoto" />
+        <TextView
+            android:layout_marginLeft="@dimen/yourphoto"
+            android:textSize="@dimen/sizeTextHeader"
+            android:text="@string/tinhdiem"
+            android:layout_toRightOf="@+id/notesubject"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/yourphoto" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navi_row">
+        <ImageView
+            android:id="@+id/calendar"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_calendar"
+            android:layout_width="@dimen/yourphoto"
+            android:layout_height="@dimen/yourphoto" />
+        <TextView
+            android:layout_marginLeft="@dimen/yourphoto"
+            android:textSize="@dimen/sizeTextHeader"
+            android:text="@string/tinhdiem"
+            android:layout_toRightOf="@+id/calendar"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/yourphoto" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navi_row">
+        <ImageView
+            android:id="@+id/money"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_money"
+            android:layout_width="@dimen/yourphoto"
+            android:layout_height="@dimen/yourphoto" />
+        <TextView
+            android:layout_marginLeft="@dimen/yourphoto"
+            android:textSize="@dimen/sizeTextHeader"
+            android:text="@string/tinhdiem"
+            android:layout_toRightOf="@+id/money"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/yourphoto" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navi_row">
+        <ImageView
+            android:id="@+id/info"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_info"
+            android:layout_width="@dimen/yourphoto"
+            android:layout_height="@dimen/yourphoto" />
+        <TextView
+            android:layout_marginLeft="@dimen/yourphoto"
+            android:textSize="@dimen/sizeTextHeader"
+            android:text="@string/tinhdiem"
+            android:layout_toRightOf="@+id/info"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/yourphoto" />
+    </RelativeLayout>
+</LinearLayout>
